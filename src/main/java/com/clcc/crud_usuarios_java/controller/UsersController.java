@@ -1,4 +1,7 @@
-import java.text.DateFormat;
+package com.clcc.crud_usuarios_java.controller;
+
+import com.clcc.crud_usuarios_java.model.Usuario;
+
 import java.util.*;
 
 public class UsersController {

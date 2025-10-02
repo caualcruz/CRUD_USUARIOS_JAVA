@@ -1,6 +1,8 @@
+package com.clcc.crud_usuarios_java.model;
+
 import java.util.Date;
 
-public class Usuario extends Pessoa{
+public class Usuario extends Pessoa {
     private String login;
     private String senha;
     private String email;

@@ -1,3 +1,5 @@
+package com.clcc.crud_usuarios_java.model;
+
 import java.util.Date;
 
 public class Pessoa {
