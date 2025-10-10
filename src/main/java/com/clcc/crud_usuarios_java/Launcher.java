@@ -1,4 +1,4 @@
-package com.clcc.crud_usuarios_java.service;
+package com.clcc.crud_usuarios_java;
 
 import javafx.application.Application;
 

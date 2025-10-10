@@ -1,14 +1,15 @@
 package com.clcc.crud_usuarios_java.model;
-
 import java.util.Date;
 
-public class Usuario extends Pessoa {
+public class Usuario extends Pessoa{
+    private int id;
     private String login;
     private String senha;
     private String email;
 
     public Usuario() {
         super();
+        this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
@@ -16,13 +17,15 @@ public class Usuario extends Pessoa {
 
     public Usuario(String nome, Date dataNasc) {
         super(nome, dataNasc);
+        this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
     }
 
-    public Usuario(String nome, String sobrenome, Date dataNasc, int telefone, char sexo, String endereco, String login, String senha, String email) {
+    public Usuario( String nome, String sobrenome, Date dataNasc, String telefone, char sexo, String endereco, String login, String senha, String email) {
         super(nome, sobrenome, dataNasc, telefone, sexo, endereco);
+        this.id = 0;
         this.login = login;
         this.senha = senha;
         this.email = email;
@@ -34,6 +37,14 @@ public class Usuario extends Pessoa {
 
     public void setLogin(String login) {
         this.login = login;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setSenha(String senha){
@@ -52,7 +63,4 @@ public class Usuario extends Pessoa {
         return senha.equals(this.senha);
     }
 
-    public String info(){
-        return "Dados do Usuário: " + super.info() + " | " + this.email + " | " + this.login;
-    }
 }
